@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# 동료 원시 데이터 — 외부 노출 금지
+*.csv
+!example*.csv
+*.xlsx
+*.xls
+
+# DOE 메타 (프로젝트별 영속, 민감 가능)
+.doe-meta.yml
+*.doe-meta.yml.bak
+
+# 분석 산출물 (동료 데이터 포함 가능 — 기본 제외, 명시적 공유는 force-add)
+reports/
+
+# IDE / 시스템
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*~
